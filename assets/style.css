@@ -13,6 +13,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    background-color: aliceblue;
 }
 
 nav ul {
@@ -27,6 +28,8 @@ nav ul {
     width: 30%;
     text-align: right;
     padding: 2em;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
 
     li {
       margin: 1em 0;
@@ -40,6 +43,19 @@ nav ul {
         text-decoration: none;
         font-weight: bold;
         font-size: 1.5em;
+
+        &:hover {
+          color: rgb(39, 73, 48);
+        }
       }
     }
+}
+
+.open {
+  transform: translateX(0%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
