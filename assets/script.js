@@ -9,3 +9,4 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     menu.classList.remove('open')
 })
+
