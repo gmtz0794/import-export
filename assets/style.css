@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgba(52, 105, 59, 0.712);
+    background-color: aliceblue;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,15 +11,19 @@ body {
 }
 
 header {
-    display: flex;
+  background-image: url('https://thumbs.dreamstime.com/b/farm-wood-nature-field-fruit-table-product-grass-garden-background-stand-green-food-landscape-morning-outdoor-sky-podium-forest-327551438.jpg');
+  background-size: cover;
+
+    display: flow-root;
     justify-content: space-between;
     background-color: aliceblue;
     border-radius: 0.4em;
-    margin-top: 25px;
+    padding: 50px;
 }
 
 nav ul {
-    background: white;
+    background: rgb(81, 129, 91);
+
     position: fixed;
     z-index: 999;
     top: 0;
@@ -29,12 +33,12 @@ nav ul {
     list-style: none;
     width: 30%;
     text-align: right;
-    padding: 2em;
+    padding: 1em;
     transform: translateX(100%);
     transition: 0.5s ease-in-out;
 
     li {
-      margin: 2.5em 0;
+      margin: 2.5em 0 0 4em;
 
       &:nth-of-type(1) {
         margin-bottom: 4em;
@@ -47,8 +51,9 @@ nav ul {
         font-size: 1.5em;
 
         &:hover {
-          color: rgb(39, 73, 48);
-          font-size: 1.5em;
+          color: rgb(0, 0, 0);
+          font-size: 1.7em;
+          cursor: pointer;
         }
       }
     }
@@ -62,12 +67,24 @@ nav ul {
   border-radius: 0.4em;
 }
 
+.home-page {
+  display: flex;
+  justify-content: space-between;
+}
+
 .open {
   transform: translateX(0%);
 }
 
 .menu-open {
-  padding: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(81, 129, 91);
+  border-radius: 50px;
+  padding:7px;
+  border: 1px black;
+  
 }
 
 h1, p {
@@ -83,14 +100,16 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
+  padding: 100px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    display: flex;
+  background-color: aliceblue;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
 }
 
 @media (min-width: 880px) {
