@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: aliceblue;
+    background-color: rgb(52, 85, 62);
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,7 +17,7 @@ header {
     display: flow-root;
     justify-content: space-between;
     background-color: aliceblue;
-    border-radius: 0.4em;
+    border-radius: 0em 0em 0.4em 0.4em;
     padding: 50px;
 }
 
@@ -38,7 +38,7 @@ nav ul {
     transition: 0.5s ease-in-out;
 
     li {
-      margin: 2.5em 0 0 4em;
+      margin: 2.5em 0 0 4.5em;
 
       &:nth-of-type(1) {
         margin-bottom: 4em;
@@ -51,7 +51,7 @@ nav ul {
         font-size: 1.5em;
 
         &:hover {
-          color: rgb(0, 0, 0);
+          color: rgb(29, 29, 29);
           font-size: 1.7em;
           cursor: pointer;
         }
@@ -60,16 +60,15 @@ nav ul {
 }
 
 .home-page,
-.about-page,
+.background-page,
+.product-page,
 .contact-page {
   background-color: aliceblue;
-  margin-top: auto;
+  margin-top: 20px;
   border-radius: 0.4em;
-}
-
-.home-page {
   display: flex;
   justify-content: space-between;
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.459);
 }
 
 .open {
@@ -78,12 +77,12 @@ nav ul {
 
 .menu-open {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: rgb(81, 129, 91);
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(122, 128, 123);
   border-radius: 50px;
   padding:7px;
-  border: 1px black;
+  box-shadow: 2px 3px black;
   
 }
 
@@ -110,6 +109,7 @@ footer {
   color: black;
   text-align: center;
   padding: 5px 0;
+  margin-top: 20px;
 }
 
 @media (min-width: 880px) {
